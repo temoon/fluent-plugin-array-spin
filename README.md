@@ -1,8 +1,30 @@
 # fluent-plugin-array-spin
 
-[Fluentd](https://fluentd.org/) filter plugin to do something.
+[Fluentd](https://fluentd.org/) filter plugin to spin array field to multiple lines.
 
-TODO: write description for you plugin.
+## Examples
+
+In:
+```json
+{"foo": "bar", "baz": [{"a": 1}, {"a": 2}, {"b": 3}]}
+```
+Out:
+```json
+{"foo": "bar", "a": 1}
+{"foo": "bar", "a": 2}
+{"foo": "bar", "b": 3}
+```
+
+In:
+```json
+{"foo": "bar", "baz": [1, 2, {"b": 3}]}
+```
+Out:
+```json
+{"foo": "bar", "data": 1}
+{"foo": "bar", "data": 2}
+{"foo": "bar", "b": 3}
+```
 
 ## Installation
 
