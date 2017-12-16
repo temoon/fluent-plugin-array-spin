@@ -5,8 +5,13 @@ module Fluent
     class ArraySpinFilter < Fluent::Plugin::Filter
       Fluent::Plugin.register_filter("array_spin", self)
       
+      desc "Key name to spin"
       config_param :key_name, :string
+      
+      desc "Keep original key in parsed result."
       config_param :reserve_key, :bool, default: false
+      
+      desc "Store parsed values as a hash value in a field in case of value is not an object."
       config_param :hash_value_field, :string, default: "data"
       
       def filter_stream(tag, es)

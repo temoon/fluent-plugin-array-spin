@@ -7,9 +7,9 @@ Gem::Specification.new do |spec|
   spec.authors = ["Tema Novikov"]
   spec.email   = ["novikov_a@corp.mail.ru"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Fluentd filter plugin to spin entry with an array field into multiple entries.}
+  spec.description   = %q{Fluentd filter plugin to spin entry with an array field into multiple entries.}
+  spec.homepage      = "https://github.com/temoon/fluent-plugin-array-spin"
   spec.license       = "Apache-2.0"
 
   test_files, files  = `git ls-files -z`.split("\x0").partition do |f|
