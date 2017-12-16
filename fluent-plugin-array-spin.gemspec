@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.authors = ["Tema Novikov"]
   spec.email   = ["novikov_a@corp.mail.ru"]
 
-  spec.summary       = %q{Fluentd filter plugin to spin entry with an array field into multiple entries.}
+  spec.summary       = %q{Fluentd filter plugin 'array_spin'.}
   spec.description   = %q{Fluentd filter plugin to spin entry with an array field into multiple entries.}
   spec.homepage      = "https://github.com/temoon/fluent-plugin-array-spin"
   spec.license       = "Apache-2.0"
